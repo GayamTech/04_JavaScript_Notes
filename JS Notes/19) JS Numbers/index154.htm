@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>If you add two numbers, the result will be a number:</p>
+<br>
+<p id="demo"></p>
+<br>
+<br>
+<p>If you add two numeric strings, the result will be a concatenated string:</p>
+<br>
+<p id="demo1"></p>
+<br>
+<br>
+<p>If you add a number and a numeric string, the result will be a concatenated string:</p>
+<br>
+<p id="demo2"></p>
+<br>
+<br>
+<p>If you add a numeric string and a number, the result will be a concatenated string:</p>
+<br>
+<p id="demo3"></p>
+<br>
+<br>
+<p>A common mistake is to expect this result to be 30:</p>
+<br>
+<p id="demo4"></p>
+<br>
+<br>
+<p>A common mistake is to expect this result to be 102030:</p>
+<br>
+<p id="demo5"></p>
+<br>
+<br>
+<p>A common mistake is to expect this result to be 102030:</p>
+<br>
+<p id="demo6"></p>
+<br>
+<br>
+
+
+<script>
+let x = 10;
+let y = 20;
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+
+
+
+let a = "10";
+let b = "20";
+let c = a + b;
+document.getElementById("demo1").innerHTML = c;
+
+
+let d = 10;
+let e = "20";
+let f = e + d;
+document.getElementById("demo2").innerHTML = f;
+
+
+let g = "10";
+let h = 20;
+document.getElementById("demo3").innerHTML = "The result is: " + g + h;
+
+
+var i = 10;
+var j = 20;
+document.getElementById("demo4").innerHTML =
+"The result is: " + i + j;
+
+
+
+let k = 10;
+let l = 20;
+let m = "30";
+let result = k + l + m;
+document.getElementById("demo5").innerHTML = result;
+
+
+
+let n = 10;
+let o = 20;
+let p = "30";
+let result = n + o + p;
+document.getElementById("demo6").innerHTML = result;
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+JavaScript Numbers:
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Adding Numbers and Strings
+WARNING !!
+
+JavaScript uses the + operator for both addition and concatenation.
+
+Numbers are added. Strings are concatenated.
+
+If you add two numbers, the result will be a number:
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!--
+
+If you add two strings, the result will be a string concatenation:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+If you add a number and a string, the result will be a string concatenation:
+
+-->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+If you add a string and a number, the result will be a string concatenation:
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+The JavaScript interpreter works from left to right.
+
+First 10 + 20 is added because x and y are both numbers.
+
+Then 30 + "30" is concatenated because z is a string.
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

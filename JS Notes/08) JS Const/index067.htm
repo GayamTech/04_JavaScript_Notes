@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Hoisting</h2>
+
+<p>With <b>var</b>, you can use a variable before it is declared:</p>
+
+<p id="demo"></p>
+
+<script>
+carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+var carName;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!--
+
+
+
+JavaScript Const:
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+
+Redeclaring:
+
+
+
+Redeclaring a JavaScript var variable is allowed anywhere in a program:
+
+
+
+
+Example:
+
+var x = 2;     // Allowed
+var x = 3;     // Allowed
+x = 4;         // Allowed
+
+
+
+
+
+
+Redeclaring an existing var or let variable to const, in the same scope, is not allowed:
+
+
+
+Example:
+
+var x = 2;     // Allowed
+const x = 2;   // Not allowed
+
+{
+let x = 2;     // Allowed
+const x = 2;   // Not allowed
+}
+
+{
+const x = 2;   // Allowed
+const x = 2;   // Not allowed
+}
+
+
+
+
+
+
+
+
+Reassigning an existing const variable, in the same scope, is not allowed:
+
+Example:
+
+const x = 2;     // Allowed
+x = 2;           // Not allowed
+var x = 2;       // Not allowed
+let x = 2;       // Not allowed
+const x = 2;     // Not allowed
+
+{
+  const x = 2;   // Allowed
+  x = 2;         // Not allowed
+  var x = 2;     // Not allowed
+  let x = 2;     // Not allowed
+  const x = 2;   // Not allowed
+}
+
+
+
+
+
+Redeclaring a variable with const, in another scope, or in another block, is allowed:
+
+Example:
+
+
+
+const x = 2;       // Allowed
+
+{
+  const x = 3;   // Allowed
+}
+
+{
+  const x = 4;   // Allowed
+}
+
+
+
+
+
+Const Hoisting:
+
+
+Variables defined with var are hoisted to the top and can be initialized at any time.
+
+Meaning: You can use the variable before it is declared:
+
+
+
+
+
+Example:
+
+
+This is OK:
+
+
+
+
+--> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

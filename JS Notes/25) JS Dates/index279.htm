@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p id="demo"></p>
+
+
+<br>
+<hr>
+
+<h2>JavaScript new Date()</h2>
+
+<p>Using new Date(7 numbers), creates a new date object with the specified date and time:</p>
+
+<p id="demo1"></p>
+
+<br>
+<hr>
+
+
+<h2>JavaScript new Date()</h2>
+
+<p>JavaScript counts months from 0 to 11.</p>
+<p>Specifying a month higher than 11, will not result in an error but add the overflow to the next year:</p>
+
+<p id="demo2"></p>
+
+<br>
+<hr>
+
+<h2>JavaScript new Date()</h2>
+
+<p>JavaScript counts months from 0 to 11.</p>
+<p>Specifying a DAY higher than max, will not result in an error but add the overflow to the next month:</p>
+<p id="demo3"></p>
+<br>
+<hr>
+
+
+
+<h2>JavaScript new Date()</h2>
+<p>6 numbers specify year, month, day, hour, minute and second:</p>
+<p id="demo4"></p>
+<br>
+<hr>
+
+<h2>JavaScript new Date()</h2>
+<p>5 numbers specify year, month, day, hour, and minute:</p>
+<p id="demo5"></p>
+<br>
+<hr>
+
+<h2>JavaScript new Date()</h2>
+<p>4 numbers specify year, month, day, and hour:</p>
+<p id="demo6"></p>
+<br>
+<hr>
+
+<h2>JavaScript new Date()</h2>
+<p>3 numbers specify year, month, and day:</p>
+<p id="demo7"></p>
+<br>
+<hr>
+
+
+<h2>JavaScript new Date()</h2>
+<p>2 numbers specify year and  month:</p>
+<p id="demo8"></p>
+<br>
+<hr>
+
+
+<h2>JavaScript new Date()</h2>
+<p>One parameter will be interpreted as new Date(milliseconds).</p>
+<p id="demo9"></p>
+<br>
+<hr>
+
+
+<h2>JavaScript new Date()</h2>
+<p>Two digit years will be interpreted as 19xx:</p>
+<p id="demo10"></p>
+<br>
+<hr>
+
+
+<h2>JavaScript new Date()</h2>
+<p>One digit years will be interpreted as 19xx:</p>
+<p id="demo11"></p>
+<br>
+<hr>
+
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+
+const e = new Date(2018, 11, 24, 10, 33, 30, 0);
+document.getElementById("demo1").innerHTML = e;
+
+const f = new Date(2018, 15, 24, 10, 33, 30, 0);
+document.getElementById("demo2").innerHTML = f;
+
+const g = new Date(2018, 05, 35, 10, 33, 30, 0);
+document.getElementById("demo3").innerHTML = g;
+
+const h = new Date(2018, 11, 24, 10, 33, 30);
+document.getElementById("demo4").innerHTML = h;
+
+const i = new Date(2018, 11, 24, 10, 33);
+document.getElementById("demo5").innerHTML = i;
+
+const j = new Date(2018, 11, 24, 10);
+document.getElementById("demo6").innerHTML = j;
+
+const k = new Date(2018, 11, 24);
+document.getElementById("demo7").innerHTML = k;
+
+const l = new Date(2018, 11);
+document.getElementById("demo8").innerHTML = l;
+
+const m = new Date(2018);
+document.getElementById("demo9").innerHTML = m;
+
+
+const n = new Date(99, 11, 24);
+document.getElementById("demo10").innerHTML = n;
+
+const o = new Date(9, 11, 24);
+document.getElementById("demo11").innerHTML = o;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+JavaScript Date Objects
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+JavaScript Date Object lets us work with dates
+
+JavaScript Date Output
+By default, JavaScript will use the browser's time zone and display a date as a full text string:
+
+Mon Dec 15 1934 01:14:54 GMT-0400 (Eastern Daylight Time)
+
+You will learn much more about how to display dates, later in this tutorial.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Creating Date Objects:
+
+Date objects are created with the new Date() constructor.
+
+
+
+
+There are 4 ways to create a new date object:
+
+new Date()
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+new Date(milliseconds)
+new Date(date string)
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+new Date():
+
+
+new Date() creates a new date object with the current date and time:
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Date objects are static. The computer time is ticking, but date objects are not.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+new Date(year, month, ...):
+
+
+new Date(year, month, ...) creates a new date object with a specified date and time.
+
+7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Note: JavaScript counts months from 0 to 11:
+
+January = 0.
+
+December = 11.
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
+
+
+
+
+
+
+
+
+Specifying:
+
+const d = new Date(2018, 15, 24, 10, 33, 30);
+Is the same as:
+
+const d = new Date(2019, 3, 24, 10, 33, 30);
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+Specifying a day higher than max, will not result in an error but add the overflow to the next month:
+
+
+
+
+Specifying:
+
+const d = new Date(2018, 5, 35, 10, 33, 30);
+Is the same as:
+
+const d = new Date(2018, 6, 5, 10, 33, 30);
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+Using 6, 4, 3, or 2 Numbers
+6 numbers specify year, month, day, hour, minute, second:
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+5 numbers specify year, month, day, hour, and minute:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+4 numbers specify year, month, day, and hour:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!--
+
+3 numbers specify year, month, and day:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+2 numbers specify year and month:
+
+-->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!--
+
+You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Previous Century:
+
+
+One and two digit years will be interpreted as 19xx:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+new Date(dateString):
+
+
+new Date(dateString) creates a new date object from a date string:
+
+
+
+Date strings are described in the next chapter.
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+JavaScript Stores Dates as Milliseconds:
+
+
+JavaScript stores dates as number of milliseconds since January 01, 1970, 00:00:00 UTC (Universal Time Coordinated).
+
+Zero time is January 01, 1970 00:00:00 UTC.
+
+Now the time is: 1634058774949 milliseconds past January 01, 1970
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+new Date(milliseconds):
+
+
+new Date(milliseconds) creates a new date object as zero time plus milliseconds:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+01 January 1970 plus 100 000 000 000 milliseconds is approximately 03 March 1973:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+January 01 1970 minus 100 000 000 000 milliseconds is approximately October 31 1966:
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+One day (24 hours) is 86 400 000 milliseconds.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Date Methods:
+
+
+When a Date object is created, a number of methods allow you to operate on it.
+
+Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond of date objects, using either local time or UTC (universal, or GMT) time.
+
+Date methods and time zones are covered in the next chapters.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Displaying Dates:
+
+
+JavaScript will (by default) output dates in full text string format:
+
+
+When you display a date object in HTML, it is automatically converted to a string, with the toString() method.
+
+
+
+The toUTCString() method converts a date to a UTC string (a date display standard).
+
+
+The toDateString() method converts a date to a more readable format:
+
+
+The toISOString() method converts a Date object to a string, using the ISO standard format:
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->

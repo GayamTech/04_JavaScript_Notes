@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <i>this</i> Keyword</h2>
+<p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+
+<p id="demo"></p>
+
+<script>
+const person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+let x = person1.fullName.call(person2);
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+The JavaScript this Keyword
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+Explicit Function Binding
+The call() and apply() methods are predefined JavaScript methods.
+
+They can both be used to call an object method with another object as argument.
+
+You can read more about call() and apply() later in this tutorial.
+
+In the example below, when calling person1.fullName with person2 as argument, this will refer to person2, even if it is a method of person1:
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+What is this?
+The JavaScript this keyword refers to the object it belongs to.
+
+It has different values depending on where it is used:
+
+In a method, this refers to the owner object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), and apply() can refer this to any object.
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->

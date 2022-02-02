@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Callbacks</h2>
+
+<p>Do a calculation and then display the result.</p>
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  myDisplayer(sum);
+}
+
+myCalculator(5, 5);
+</script>
+
+</body>
+</html>
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+    Or, you could call a calculator function (myCalculator), and let the calculator function call the display function (myDisplayer):
+
+
+Example
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  myDisplayer(sum);
+}
+
+myCalculator(5, 5);
+
+
+
+
+
+
+
+
+
+The problem with the first example above, is that you have to call two functions to display the result.
+
+The problem with the second example, is that you cannot prevent the calculator function from displaying the result.
+
+Now it is time to bring in a callback.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>Finding the largest number.</p>
+
+
+<p id="demo"></p>
+
+
+
+
+<script>
+
+
+function findMax() {
+  let max = -Infinity;
+  for(let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+} 
+
+
+document.getElementById("demo").innerHTML = findMax(4, 5, 6);
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+
+    The Arguments Object
+
+
+JavaScript functions have a built-in object called the arguments object.
+
+The argument object contains an array of the arguments used when the function was called (invoked).
+
+This way you can simply use a function to find (for instance) the highest value in a list of numbers:
+
+
+
+
+
+Example
+
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+
+
+
+
+
+-->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

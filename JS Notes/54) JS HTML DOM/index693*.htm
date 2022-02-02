@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p>Hello Norway!</p>
+
+<p>Click the button to change the color of all p elements.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  const myCollection = document.getElementsByTagName("p");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+    The length property is useful when you want to loop through the elements in a collection:
+
+
+
+Example
+
+
+
+Change the text color of all <p> elements:
+
+
+
+const myCollection = document.getElementsByTagName("p");
+for (let i = 0; i < myCollection.length; i++) {
+  myCollection[i].style.color = "red";
+}
+
+
+
+
+
+ -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- 
+
+    An HTMLCollection is NOT an array!
+
+
+
+    
+An HTMLCollection may look like an array, but it is not.
+
+You can loop through the list and refer to the elements with a number (just like an array).
+
+However, you cannot use array methods like valueOf(), pop(), push(), or join() on an HTMLCollection.
+
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

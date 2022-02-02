@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo"></p>
+
+<script>
+// Constructor function for Person objects
+function Person(firstName,lastName,age,eyeColor) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  this.changeName = function (name) {
+    this.lastName = name;
+  }
+}
+// Create a Person object
+const myMother = new Person("Sally","Rally",48,"green");
+
+// Change last name
+myMother.changeName("Doe");
+
+// Display last name
+document.getElementById("demo").innerHTML =
+"My mother's last name is " + myMother.lastName;
+</script>
+
+</body>
+</html>
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+    You cannot add a new method to an object constructor the same way you add a new method to an existing object.
+
+
+Adding methods to an object constructor must be done inside the constructor function:
+
+Example
+
+
+function Person(firstName, lastName, age, eyeColor) {
+  this.firstName = firstName; 
+  this.lastName = lastName;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  this.changeName = function (name) {
+    this.lastName = name;
+  };
+}
+
+
+
+
+
+
+
+
+The changeName() function assigns the value of name to the person's lastName property.
+
+Now You Can Try:
+myMother.changeName("Doe");
+
+
+
+JavaScript knows which person you are talking about by "substituting" this with myMother.
+
+
+ -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

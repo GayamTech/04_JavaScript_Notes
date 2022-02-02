@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p>Hello Norway!</p>
+
+<p>Click the button to change the color of all p elements.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  const myNodelist = document.querySelectorAll("p");
+  for (let i = 0; i < myNodelist.length; i++) {
+    myNodelist[i].style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+    The length property is useful when you want to loop through the nodes in a node list:
+
+
+
+
+Example
+
+
+
+
+
+Change the color of all <p> elements in a node list:
+
+
+
+const myNodelist = document.querySelectorAll("p");
+for (let i = 0; i < myNodelist.length; i++) {
+  myNodelist[i].style.color = "red";
+}
+
+
+
+
+
+
+
+
+
+The Difference Between an HTMLCollection and a NodeList
+
+
+
+
+
+An HTMLCollection (previous chapter) is a collection of HTML elements.
+
+A NodeList is a collection of document nodes.
+
+A NodeList and an HTML collection is very much the same thing.
+
+Both an HTMLCollection object and a NodeList object is an array-like list (collection) of objects.
+
+Both have a length property defining the number of items in the list (collection).
+
+Both provide an index (0, 1, 2, 3, 4, ...) to access each item like an array.
+
+HTMLCollection items can be accessed by their name, id, or index number.
+
+NodeList items can only be accessed by their index number.
+
+Only the NodeList object can contain attribute nodes and text nodes.
+
+
+
+
+
+
+
+
+
+
+
+A node list is not an array!
+
+A node list may look like an array, but it is not.
+
+You can loop through the node list and refer to its nodes like an array.
+
+However, you cannot use Array Methods, like valueOf(), push(), pop(), or join() on a node list.
+
+
+
+
+
+ -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

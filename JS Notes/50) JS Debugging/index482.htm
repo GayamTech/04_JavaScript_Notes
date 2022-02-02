@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Best Practices</h2>
+
+<br>
+
+<p>Avoid global variables, avoid new, avoid ==, avoid eval()</p>
+
+<br>
+
+<pre>Avoid Global Variables :
+
+    Minimize the use of global variables.
+    
+    This includes all data types, objects, and functions.
+    
+    Global variables and functions can be overwritten by other scripts.
+    
+    Use local variables instead, and learn how to use closures.
+</pre>
+
+<br>
+
+
+
+<pre>Always Declare Local Variables :
+
+    All variables used in a function should be declared as local variables.
+    
+    Local variables must be declared with the var keyword or the let keyword,or the const keyword, otherwise they will become global variables.
+    
+    Strict mode does not allow undeclared variables.
+</pre>
+
+<br>
+
+
+
+<pre>Declarations and Initalize Variables on Top :
+
+    It is a good coding practice to put all declarations at the top of each script or function.
+    
+    This will:
+    
+    Give cleaner code
+    Provide a single place to look for local variables
+    Make it easier to avoid unwanted (implied) global variables
+    Reduce the possibility of unwanted re-declarations
+</pre>
+
+<br>
+
+
+<pre>Avoid Using eval() :
+
+    The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it.
+
+    Because it allows arbitrary code to be run, it also represents a security problem.
+
+
+</pre>
+
+
+
+
+<script>
+    
+// Declare and initiate at the beginning
+let firstName = "",
+let lastName = "",
+let price = 0,
+let discount = 0,
+let fullPrice = 0,
+const myArray = [],
+const myObject = {};
+
+
+// Declare Objects with const
+
+// Declaring objects with const will prevent any accidental change of type:
+
+let car1 = {type:"Fiat", model:"500", color:"white"};
+car1 = "Fiat";      // Changes object to string
+
+
+const car2 = {type:"Fiat", model:"500", color:"white"};
+car2 = "Fiat";      // Not possible
+
+
+
+// Declare Arrays with const
+
+// Declaring arrays with const will prevent any accidential change of type:
+
+
+let cars3 = ["Saab", "Volvo", "BMW"];
+cars3 = 3;    // Changes array to number
+
+const cars4 = ["Saab", "Volvo", "BMW"];
+cars4 = 3;    // Not possible
+
+
+// Beware of Automatic Type Conversions
+
+// JavaScript is loosely typed.
+
+//  variable can contain all data types.
+
+// A variable can change its data type:
+
+let x = "Hello";     // typeof x is a string
+x = 5;               // changes typeof x to a number
+
+
+
+// Beware that numbers can accidentally be converted to strings or NaN (Not a Number).
+
+// When doing mathematical operations, JavaScript can convert numbers to strings:
+
+
+let x = 5 + 7;       // x.valueOf() is 12,  typeof x is a number
+let x = 5 + "7";     // x.valueOf() is 57,  typeof x is a string
+let x = "5" + 7;     // x.valueOf() is 57,  typeof x is a string
+let x = 5 - 7;       // x.valueOf() is -2,  typeof x is a number
+let x = 5 - "7";     // x.valueOf() is -2,  typeof x is a number
+let x = "5" - 7;     // x.valueOf() is -2,  typeof x is a number
+let x = 5 - "x";     // x.valueOf() is NaN, typeof x is a number
+
+
+
+
+// Subtracting a string from a string, does not generate an error but returns NaN (Not a Number):
+
+"Hello" - "Dolly"    // returns NaN
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

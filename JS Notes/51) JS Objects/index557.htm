@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Using Map.forEach():</p>
+
+<p id="demo"></p>
+
+
+
+
+<script>
+
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let text = "";
+fruits.forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+
+document.getElementById("demo").innerHTML = text;
+
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+
+    JavaScript Objects vs Maps
+
+
+
+Differences between JavaScript Objects and Maps:
+
+
+                            Object	                                    Map
+
+Iterable	            Not directly iterable	                    Directly iterable
+
+Size	                Do not have a size property	                Have a size property
+
+Key Types	            Keys must be Strings (or Symbols)	        Keys can be any datatype
+
+Key Order	            Keys are not well ordered	                Keys are ordered by insertion
+
+Defaults	            Have default keys	                        Do not have default keys
+
+
+
+
+
+ -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!--
+
+
+    Map.forEach()
+
+
+The forEach() method invokes a callback for each key/value pair in a Map:
+
+Example
+
+
+// List all entries
+let text = "";
+fruits.forEach (function(value, key) {
+  text += key + ' = ' + value;
+})
+
+
+
+ -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h2>JavaScript getTime()</h2>
+<h2>0) JavaScript getTime()</h2>
 <p>The internal clock in JavaScript counts from midnight January 1, 1970.</p>
 <p>The getTime() function returns the number of milliseconds since then:</p>
 
@@ -13,7 +13,7 @@
 
 
 
-<h2>JavaScript getFullYear()</h2>
+<h2>1) JavaScript getFullYear()</h2>
 <p>The getFullYear() method returns the full year of a date:</p>
 
 <p id="demo1"></p>
@@ -23,7 +23,7 @@
 
 
 
-<h2>JavaScript getMonth()</h2>
+<h2>2) JavaScript getMonth()</h2>
 <p>The getMonth() method returns the month of a date as a number from 0 to 11.</p>
 <p>To get the correct month, you must add 1:</p>
 
@@ -33,7 +33,7 @@
 
 
 
-<h2>JavaScript getMonth()</h2>
+<h2>3) JavaScript getMonth()</h2>
 <p>The getMonth() method returns the month as a number:</p>
 <p>You can use an array to display the name of the month:</p>
 
@@ -44,7 +44,7 @@
 
 
 
-<h2>JavaScript getDate()</h2>
+<h2>4) JavaScript getDate()</h2>
 <p>The getDate() method returns the day of a date as a number (1-31):</p>
 
 <p id="demo4"></p>
@@ -54,7 +54,7 @@
 
 
 
-<h2>JavaScript getHours()</h2>
+<h2>5) JavaScript getHours()</h2>
 <p>The getHours() method returns the hours of a date as a number (0-23):</p>
 
 <p id="demo5"></p>
@@ -62,7 +62,7 @@
 <hr>
 
 
-<h2>JavaScript getMinutes()</h2>
+<h2>6) JavaScript getMinutes()</h2>
 <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
 
 <p id="demo6"></p>
@@ -70,7 +70,7 @@
 <hr>
 
 
-<h2>JavaScript getSeconds()</h2>
+<h2>7) JavaScript getSeconds()</h2>
 <p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
 
 <p id="demo7"></p>
@@ -78,7 +78,7 @@
 <hr>
 
 
-<h2>JavaScript getMilliseconds()</h2>
+<h2>8) JavaScript getMilliseconds()</h2>
 <p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
 
 <p id="demo8"></p>
@@ -86,7 +86,7 @@
 <hr>
 
 
-<h2>JavaScript getDay()</h2>
+<h2>9) JavaScript getDay()</h2>
 <p>The getDay() method returns the weekday as a number:</p>
 
 <p id="demo9"></p>
@@ -95,7 +95,7 @@
 
 
 
-<h2>JavaScript getDay()</h2>
+<h2>10) JavaScript getDay()</h2>
 <p>The getDay() method returns the weekday as a number:</p>
 <p>You can use an array to display the name of the weekday:</p>
 
@@ -145,14 +145,14 @@ document.getElementById("demo7").innerHTML = f.getSeconds();
 
 document.getElementById("demo8").innerHTML = f.getMilliseconds();
 
-document.getElementById("demo").innerHTML = f.getDay();
+document.getElementById("demo9").innerHTML = f.getDay();
 
 
 
 
 const g = new Date();
 const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-document.getElementById("demo").innerHTML = days[g.getDay()];
+document.getElementById("demo10").innerHTML = days[g.getDay()];
 
 
 </script>

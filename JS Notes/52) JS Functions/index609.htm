@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Function Closures</h2>
+<p>Counting with a local variable.</p>
+
+<p id="demo">0</p>
+
+<script>
+document.getElementById("demo").innerHTML = add();
+function add() {
+  let counter = 0;
+  function plus() {counter += 1;}
+  plus();  
+  return counter; 
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+    JavaScript Nested Functions
+
+
+All functions have access to the global scope.  
+
+In fact, in JavaScript, all functions have access to the scope "above" them.
+
+JavaScript supports nested functions. Nested functions have access to the scope "above" them.
+
+
+
+
+
+In this example, the inner function plus() has access to the counter variable in the parent function:
+
+Example
+
+
+function add() {
+  let counter = 0;
+  function plus() {counter += 1;}
+  plus();   
+  return counter;
+}
+
+
+
+
+This could have solved the counter dilemma, if we could reach the plus() function from the outside.
+
+We also need to find a way to execute counter = 0 only once.
+
+We need a closure.
+
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let x1 = "";      // string 
+let x2 = 0;       // number
+let x3 = false;   // boolean
+const x4 = {};    // Object object
+const x5 = [];    // Array object
+const x6 = /()/;  // RegExp object
+const x7 = function(){};  // function
+
+// Display the type of all
+document.getElementById("demo").innerHTML =
+"x1: " + typeof x1 + "<br>" +
+"x2: " + typeof x2 + "<br>" +
+"x3: " + typeof x3 + "<br>" +
+"x4: " + typeof x4 + "<br>" +
+"x5: " + typeof x5 + "<br>" +
+"x6: " + typeof x6 + "<br>" +
+"x7: " + typeof x7 + "<br>";
+</script>
+
+</body>
+</html>
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!--
+
+    Did You Know?
+
+
+As you can see above, JavaScript has object versions of the primitive data types String, Number, and Boolean. But there is no reason to create complex objects. Primitive values are much faster:
+
+Use string literals "" instead of new String().
+
+Use number literals 50 instead of new Number().
+
+Use boolean literals true / false instead of new Boolean().
+
+Use object literals {} instead of new Object().
+
+Use array literals [] instead of new Array().
+
+Use pattern literals /()/ instead of new RegExp().
+
+Use function expressions () {} instead of new Function().
+
+
+
+
+Example
+let x1 = "";             // new primitive string
+let x2 = 0;              // new primitive number
+let x3 = false;          // new primitive boolean
+
+const x4 = {};           // new Object object
+const x5 = [];           // new Array object
+const x6 = /()/          // new RegExp object
+const x7 = function(){}; // new function
+
+
+
+ -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+
+    String Objects
+
+
+Normally, strings are created as primitives: firstName = "John"
+
+But strings can also be created as objects using the new keyword:
+firstName = new String("John")
+
+Learn why strings should not be created as object in the chapter JS Strings.
+
+
+
+
+
+
+
+
+
+Number Objects
+
+
+Normally, numbers are created as primitives: x = 30
+
+But numbers can also be created as objects using the new keyword:
+x = new Number(30)
+
+Learn why numbers should not be created as object in the chapter JS Numbers.
+
+
+
+
+
+
+
+
+
+Boolean Objects
+
+
+Normally, booleans are created as primitives: x = false
+
+But booleans can also be created as objects using the new keyword:
+x = new Boolean(false)
+
+
+
+
+
+-->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

@@ -2,16 +2,21 @@
 <html>
 <body>
 
-<h2>Demo External JavaScript</h2>
+<h2>JavaScript Functions</h2>
+<p>Functions can be used in expressions.</p>
 
-<p id="demo">A Paragraph.</p>
+<p id="demo"></p>
 
-<button type="button" onclick="myFunction()">Try it</button>
+<script>
 
-<p>This example links to "myScript.js".</p>
-<p>(myFunction is stored in "myScript.js")</p>
+function myFunction(a, b) {
+  return a * b;
+}
 
-<script src="myScript.js"></script>
+let x = myFunction(4, 3) * 2;
+document.getElementById("demo").innerHTML = x;
+
+</script>
 
 </body>
 </html>
@@ -19,31 +24,37 @@
 
 
 
-
-
-
 <!-- -->
 <!-- -->
-<!--
+<!-- -->
+<!-- -->
+<!-- 
 
-JavaScript Where To:
+
+    JavaScript functions can be used in expressions:
+
+
+
+Example
+
+
+function myFunction(a, b) {
+  return a * b;
+}
+
+let x = myFunction(4, 3) * 2;
+
+
+
 
 -->
-<!-- -->
-<!-- -->
-<!-- -->
 <!-- -->
 <!-- -->
 <!-- --> 
 <!-- -->
 <!-- -->
 <!-- -->
-<!--
-
-This example uses no path to link to myScript.js:
-
-
--->
+<!-- -->
 <!-- -->
 <!-- -->
 <!-- -->

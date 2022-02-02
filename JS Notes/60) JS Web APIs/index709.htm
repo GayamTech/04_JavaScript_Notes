@@ -1,0 +1,183 @@
+<html>
+<body>
+
+<h2>JavaScript Geolocation API</h2>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- -->
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+
+
+    Web Geolocation API
+
+
+
+
+Locate the User's Position
+
+
+
+The HTML Geolocation API is used to get the geographical position of a user.
+
+Since this can compromise privacy, the position is not available unless the user approves it.
+
+
+
+
+
+Note: Geolocation is most accurate for devices with GPS, like smartphone.
+
+
+
+
+Note: As of Chrome 50, the Geolocation API will only work on secure contexts such as HTTPS. If your site is hosted on an non-secure origin (such as HTTP) the requests to get the users location will no longer function.
+
+
+
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+
+    Using the Geolocation API
+
+
+
+
+The getCurrentPosition() method is used to return the user's position.
+
+
+
+
+
+The example below returns the latitude and longitude of the user's position:
+
+
+
+
+Example
+
+
+
+<script>
+const x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+Example explained:
+
+
+
+
+Check if Geolocation is supported
+If supported, run the getCurrentPosition() method. If not, display a message to the user
+If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)
+The showPosition() function outputs the Latitude and Longitude
+
+
+
+The example above is a very basic Geolocation script, with no error handling.
+
+
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

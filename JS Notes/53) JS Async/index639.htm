@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript async / await</h2>
+
+<h1 id="demo"></h1>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {
+    resolve("I love You !!");
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script>
+
+</body>
+</html>
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+
+    Await Syntax
+
+
+The keyword await before a function makes the function wait for a promise:
+
+
+
+let value = await promise;
+
+
+
+
+
+The await keyword can only be used inside an async function.
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!--
+
+    Example
+
+
+Let's go slowly and learn how to use it.
+
+
+
+Basic Syntax
+
+
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {
+    resolve("I love You !!");
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+
+
+
+
+ -->
+<!-- -->
+<!-- -->
+<!--
+
+    The two arguments (resolve and reject) are pre-defined by JavaScript.
+
+We will not create them, but call one of them when the executor function is ready.
+
+Very often we will not need a reject function.
+
+
+
+ -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

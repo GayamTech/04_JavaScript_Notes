@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Undefined is Not Null ;</h2>
+
+<pre>JavaScript objects, variables, properties, and methods can be undefined.
+    
+    In addition, empty JavaScript objects can have the value null.
+    
+
+    
+    This can make it a little bit difficult to test if an object is empty.
+    
+    You can test if an object exists by testing if the type is undefined
+
+
+
+    But you cannot test if an object is null, because this will throw an error if the object is undefined:
+
+
+
+    To solve this problem, you must test if an object is not null, and not undefined.
+
+    But this can still throw an error
+
+
+
+    Because of this, you must test for not undefined before you can test for not null:
+
+</pre>
+
+
+
+
+
+
+<script>
+// if (typeof myObj === "undefined") 
+
+// Incorrect:
+// if (myObj === null) 
+
+
+// Incorrect:
+// if (myObj !== null && typeof myObj !== "undefined") 
+
+//Correct:
+if (typeof myObj !== "undefined" && myObj !== null) {}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
